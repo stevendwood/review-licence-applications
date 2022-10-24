@@ -21,12 +21,13 @@ export const PageWrap: FC<PageProps> = ({ routes, children }) => {
     }))
     .sort(compare);
   const meta = [
-    { href: "/sitemap", text: "Sitemap" }
+    { href: "/sitemap", text: "Sitemap" },
+    { href: "/cookies", text: "Cookies" }
   ];
 
   return (
     <Page
-      title={siteTitle}
+      title="Review licence applications"
       navigation={navigation}
       footerNavigation={meta}
     >
